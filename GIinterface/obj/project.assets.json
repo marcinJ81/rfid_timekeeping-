@@ -1617,6 +1617,19 @@
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
       },
+      "DB_repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MongoDB.Bson": "2.9.1"
+        },
+        "compile": {
+          "bin/placeholder/DB_repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DB_repository.dll": {}
+        }
+      },
       "mongoEngine/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5636,6 +5649,11 @@
         "system.threading.threadpool.nuspec"
       ]
     },
+    "DB_repository/1.0.0": {
+      "type": "project",
+      "path": "../DB_repository/DB_repository.csproj",
+      "msbuildProject": "../DB_repository/DB_repository.csproj"
+    },
     "mongoEngine/1.0.0": {
       "type": "project",
       "path": "../mongoEngine/mongoEngine.csproj",
@@ -5644,6 +5662,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "DB_repository >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "mongoEngine >= 1.0.0"
     ]
@@ -5656,11 +5675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\GIinterface\\UI_interface.csproj",
+      "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj",
       "projectName": "UI_interface",
-      "projectPath": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\GIinterface\\UI_interface.csproj",
+      "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj",
       "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\GIinterface\\obj\\",
+      "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5682,8 +5701,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
-              "projectPath": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\mongoEngine\\mongoEngine.csproj"
+            "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj": {
+              "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj"
+            },
+            "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
+              "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {}
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
-        "projectName": "mongoEngine",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj",
+        "projectName": "DB_repository",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -45,14 +45,6 @@
         "netstandard2.0": {
           "dependencies": {
             "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.9.1, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.9.1, )"
-            },
-            "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.9.1, )"
             },

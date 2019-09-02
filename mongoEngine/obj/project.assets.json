@@ -5150,11 +5150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+      "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
       "projectName": "mongoEngine",
-      "projectPath": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+      "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
       "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.juranek\\source\\repos\\mongoEngine\\mongoEngine\\obj\\",
+      "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

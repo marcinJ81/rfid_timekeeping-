@@ -1,0 +1,16 @@
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\UI_interface.deps.json
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\UI_interface.runtimeconfig.json
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\UI_interface.runtimeconfig.dev.json
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\UI_interface.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\UI_interface.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\DB_repository.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\mongoEngine.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\DB_repository.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\bin\Debug\netcoreapp2.1\mongoEngine.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.csprojAssemblyReference.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.csproj.CoreCompileInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.AssemblyInfoInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.csproj.CopyComplete
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\GIinterface\obj\Debug\netcoreapp2.1\UI_interface.pdb

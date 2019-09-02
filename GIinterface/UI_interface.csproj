@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DB_repository\DB_repository.csproj" />
     <ProjectReference Include="..\mongoEngine\mongoEngine.csproj" />
   </ItemGroup>
 

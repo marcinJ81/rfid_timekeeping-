@@ -4,3 +4,12 @@ C:\Users\m.juranek\source\repos\mongoEngine\mongoEngine\obj\Debug\netstandard2.0
 C:\Users\m.juranek\source\repos\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.csproj.CoreCompileInputs.cache
 C:\Users\m.juranek\source\repos\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.AssemblyInfoInputs.cache
 C:\Users\m.juranek\source\repos\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\bin\Debug\netstandard2.0\mongoEngine.deps.json
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\bin\Debug\netstandard2.0\mongoEngine.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\bin\Debug\netstandard2.0\mongoEngine.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.csprojAssemblyReference.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.csproj.CoreCompileInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.AssemblyInfoInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\mongoEngine\obj\Debug\netstandard2.0\mongoEngine.pdb
