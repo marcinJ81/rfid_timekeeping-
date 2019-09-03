@@ -9,47 +9,29 @@ namespace GIinterface
 {
     class Program
     {
-        private static IMongoConnection imongoCon { get; set; }
+        private static IMongoInreface<DB_repository.Tag> imongointerface { get; set; }
         private static ITag_Services<DB_repository.Tag> itag { get; set; }
 
         static void Main(string[] args)
         {
-            imongoCon = new MongoConnection();
+            imongointerface = new MongoInterfaceClass<DB_repository.Tag>();
+            IGeneratorId igenId = new GenerateId();
             itag = new Tag_services();
-            string collectionName = "test";
-            var database = imongoCon.setConnocetion().GetDatabase("tags");
-            var collection = database.GetCollection<DB_repository.Tag>(collectionName);
-
-            var model = itag.getEmptyModel();
-            collection.InsertOne(model);
-           // Console.WriteLine("Hello World!");
-        }
-        static async Task MainAsync()
-        {
-            //https://www.codementor.io/pmbanugo/working-with-mongodb-in-net-1-basics-g4frivcvz
-            var client = new MongoClient();
-
-            IMongoDatabase db = client.GetDatabase("tags");
-            var collection = db.GetCollection<BsonDocument>("test");
-
-            var document = new BsonDocument
+            DB_repository.Tag tag = new DB_repository.Tag()
             {
-              {"firstname", BsonValue.Create("Peter")},
-              {"lastname", new BsonString("Mbanugo")},
-              { "subjects", new BsonArray(new[] {"English", "Mathematics", "Physics"}) },
-              { "class", "JSS 3" },
-              { "age", 23 }
-            };
+                Id = Guid.NewGuid(),
+                Tag_id = igenId.generateTagId(),
+                Tag_label = igenId.generateLabel()
 
-            await collection.InsertOneAsync(document);
-        }
-        //static void Main(string[] args)
-        //{
-        //    MainAsync().Wait();
+            };
+            itag.addData(tag);
+
+            imongointerface.InsertOne(itag.getData(), "test");
 
             
-        //    Console.WriteLine("Hello World!");
-        //}
+       
+           // Console.WriteLine("Hello World!");
+        }
 
     }
 }

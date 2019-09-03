@@ -8,8 +8,8 @@ namespace DB_repository
     {
         List<T> getListResult();
         T getData();
-        void addData(T model);
         T getEmptyModel();
+        void addData(T model);
     }
 
     public class Tag_services : ITag_Services<Tag>, IDisposable
@@ -56,5 +56,6 @@ namespace DB_repository
         {
             this.model = null;
         }
+
     }
 }
