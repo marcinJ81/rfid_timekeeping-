@@ -11,7 +11,6 @@ namespace DB_repository
         [BsonRepresentation(BsonType.String)]
         public Guid Id { get; set; }
 
-        //how set unique column?
         [BsonElement("tag_id")]
         public string Tag_id { get; set; }
       
