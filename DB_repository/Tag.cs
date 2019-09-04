@@ -17,5 +17,11 @@ namespace DB_repository
         [BsonElement("tag_label")]
         public string Tag_label { get; set; }
 
+        [BsonElement("tag_time")]
+        [BsonRepresentation(BsonType.DateTime)]
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
+        public DateTime Tag_time { get; set; }
+
+
     }
 }

@@ -14,6 +14,7 @@ namespace GIinterface
 
         static void Main(string[] args)
         {
+            IConnectMongoClient imongoCon = new ConnectMongoClient();
             imongointerface = new MongoInterfaceClass<DB_repository.Tag>();
             IGeneratorId igenId = new GenerateId();
             itag = new Tag_services();
@@ -21,16 +22,14 @@ namespace GIinterface
             {
                 Id = Guid.NewGuid(),
                 Tag_id = igenId.generateTagId(),
-                Tag_label = igenId.generateLabel()
-
+                Tag_label = igenId.generateLabel(),
+                Tag_time = DateTime.Now.ToUniversalTime() //MongoDB stores all DateTimes in UTC
             };
-            itag.addData(tag);
 
-            imongointerface.InsertOne(itag.getData(), "test");
-
-            
-       
-           // Console.WriteLine("Hello World!");
+             itag.addData(tag);
+            imongointerface.InsertOne(itag.getData(), "test","tags");
+           
+             Console.WriteLine("Hello World!");
         }
 
     }

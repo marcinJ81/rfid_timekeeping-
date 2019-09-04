@@ -24,6 +24,7 @@ namespace DB_repository
             this.model.Id = model.Id;
             this.model.Tag_id = model.Tag_id;
             this.model.Tag_label = model.Tag_label;
+            this.model.Tag_time = model.Tag_time;
         }
 
         public Tag getData()

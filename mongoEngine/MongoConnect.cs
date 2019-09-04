@@ -1,26 +1,18 @@
-﻿using MongoDB.Bson;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace mongoEngine
 {
-    public interface IMongoInreface<T> where T : class
+    public interface IConnectMongoClient
     {
         MongoClient setConnocetion();
-        void InsertOne(T model,string collectionName);
+        
     }
 
-    public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class
+    public class ConnectMongoClient : IConnectMongoClient
     {
- 
-        public void InsertOne(T model, string collectionName)
-        {
-            var db = setConnocetion().GetDatabase("tags");
-            var collection = db.GetCollection<T>(collectionName);
-            collection.InsertOne(model);
-
-        }
-
         public MongoClient setConnocetion()
         {
             try
@@ -35,6 +27,5 @@ namespace mongoEngine
                 return result;
             }
         }
-
     }
 }
