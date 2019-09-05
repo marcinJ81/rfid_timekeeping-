@@ -12,6 +12,7 @@ namespace mongoEngine
         void InsertOne(T model);
         void UpdateOne(FilterDefinition<T> filter, UpdateDefinition<T> source);
         List<T> GetAllDocumentsFromCollection();
+        T GEtSpecificDocument(FilterDefinition<T> filter);
 
     }
     public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class
@@ -45,6 +46,9 @@ namespace mongoEngine
             return documents;
         }
 
-
+        public T GEtSpecificDocument(FilterDefinition<T> filter)
+        {
+            return collectionDB.Find(filter).First();
+        }
     }
 }

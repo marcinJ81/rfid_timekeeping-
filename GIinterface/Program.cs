@@ -37,21 +37,22 @@ namespace GIinterface
             //itag.addData(tag);
             //imongointerface.InsertOne(itag.getData());
 
-            var documents = imongointerface.GetAllDocumentsFromCollection();
-            foreach (var i in documents)
-            {
-                Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
-            }
+            //var documents = imongointerface.GetAllDocumentsFromCollection();
+            //foreach (var i in documents)
+            //{
+            //    Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
+            //}
 
-            FilterDefinition<DB_repository.Tag> filter = Builders<DB_repository.Tag>.Filter.Eq("tag_label", "25");
-            UpdateDefinition<DB_repository.Tag> source = Builders<DB_repository.Tag>.Update.Set("tag_id", igenId.generateTagId());
-            imongointerface.UpdateOne(filter,source);
+            //FilterDefinition<DB_repository.Tag> filter = Builders<DB_repository.Tag>.Filter.Eq("tag_label", "25");
+            //UpdateDefinition<DB_repository.Tag> source = Builders<DB_repository.Tag>.Update.Set("tag_id", igenId.generateTagId());
+            //imongointerface.UpdateOne(filter,source);
 
-            Console.WriteLine("\r");
+            //Console.WriteLine("\r");
 
-            var documents2 = imongointerface.GetAllDocumentsFromCollection();
-            documents2 = documents2.Where(x => x.Tag_label == "25").ToList();
-            Console.WriteLine(documents2[0].Id + " " + documents2[0].Tag_id + " " + documents2[0].Tag_label + " " + documents2[0].Tag_time.ToLongTimeString() );
+            //var documents2 = imongointerface.GetAllDocumentsFromCollection();
+            //documents2 = documents2.Where(x => x.Tag_label == "25").ToList();
+            //Console.WriteLine(documents2[0].Id + " " + documents2[0].Tag_id + " " + documents2[0].Tag_label + " " + documents2[0].Tag_time.ToLongTimeString() );
+
         }
 
     }
