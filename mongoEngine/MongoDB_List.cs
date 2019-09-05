@@ -22,37 +22,44 @@ namespace mongoEngine
         private List<MongoDBPArameters> listOfMongoDB { get; set; }
         public MongoDB_List()
         {
-            this.listOfMongoDB = new List<MongoDBPArameters>();
+            this.listOfMongoDB = new List<MongoDBPArameters>()
+            {
+                new MongoDBPArameters
+                {
+                    id_db = 1,
+                    name = "test_mongo",
+                    collection_name = "test2",
+                    base_name = "tags"
+                }};
         }
         public void addElement(MongoDBPArameters dBparameters)
         {
             this.listOfMongoDB.Add(new MongoDBPArameters
             {
-                id_db = 1,
-                name = "test_mongo",
-                collection_name = "test",
-                base_name = "tags",
+                id_db = dBparameters.id_db,
+                name = dBparameters.name,
+                collection_name = dBparameters.collection_name,
+                base_name = dBparameters.base_name,
             });
         }
 
         public MongoDBPArameters getSpecificParamters(string name)
         {
-            if (this.listOfMongoDB.Any())
+            MongoDBPArameters emptyList = new MongoDBPArameters()
             {
-                var result = this.listOfMongoDB.Where(x => x.base_name == name).First();
-                return result;
-            }
-            else
-            {
-                MongoDBPArameters emptyList = new MongoDBPArameters()
-                    {                      
-                          id_db = 0,
-                          name = "brak",
-                          base_name = "",
-                          collection_name =""
-                    };
-                return emptyList;
-            }
+                id_db = 0,
+                name = "brak",
+                base_name = "",
+                collection_name = ""
+            };
+           
+                var result = this.listOfMongoDB.Where(x => x.name == name);
+                if (result.Any())
+                    return result.First();
+                else
+                    return emptyList;
+
+            
         }
     }
 }

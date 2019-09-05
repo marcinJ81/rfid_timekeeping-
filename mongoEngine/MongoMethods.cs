@@ -9,7 +9,7 @@ namespace mongoEngine
     public interface IMongoInreface<T> where T : class
     {
         void InsertOne(T model, IMongo_List mongoList);
-        void FindAndUpdate(T model, string valueForUpdate, IMongo_List mongoListe);
+        void FindAndUpdate(T model, string valueForUpdate, IMongo_List imongoListe);
     }
     public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class
     {
@@ -27,10 +27,13 @@ namespace mongoEngine
              collectionDB.InsertOne(model);
         }
 
-        //tymczasowe rozwiązanie (temporary solution, break the method)
-        public void FindAndUpdate(T model, string valueForUpdate, IMongo_List mongoList)
+        
+        public void FindAndUpdate(T model, string valueForUpdate, IMongo_List imongoList)
         {
-           
+            db = imongoCon.setConnocetion().GetDatabase(imongoList.getSpecificParamters("test_mongo").base_name);
+            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);
+            //collectionDB.FindOneAndUpdate(model,)
+
         }
     }
 }

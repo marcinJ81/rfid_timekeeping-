@@ -8,8 +8,8 @@ namespace DB_repository
     {
         [BsonId]
         [BsonElement("id")]
-        [BsonRepresentation(BsonType.String)]
-        public Guid Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
 
         [BsonElement("tag_id")]
         public string Tag_id { get; set; }

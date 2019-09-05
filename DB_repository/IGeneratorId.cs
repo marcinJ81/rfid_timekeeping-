@@ -26,14 +26,16 @@ namespace DB_repository
         {
             Random R = new Random();
 
-            double NUD_1Value = 1;
-            double NUD_2Value = 999999999999999; //15-digit number
+            long NUD_1Value = 1;
+            long NUD_2Value = 999999999999999; //15-digit number
 
             var next = R.NextDouble();
 
             double v = NUD_1Value + (next * (NUD_2Value - NUD_1Value));
 
-            return v.ToString();
+            long result = Convert.ToInt64(v);
+
+            return result.ToString();
         }
     }
 }

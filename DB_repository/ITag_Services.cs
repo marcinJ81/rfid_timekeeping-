@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -21,7 +22,7 @@ namespace DB_repository
         }
         public void addData(Tag model)
         {
-            this.model.Id = model.Id;
+            this.model.Id = ObjectId.GenerateNewId().ToString();
             this.model.Tag_id = model.Tag_id;
             this.model.Tag_label = model.Tag_label;
             this.model.Tag_time = model.Tag_time;
@@ -39,7 +40,7 @@ namespace DB_repository
         {
             Tag tag = new Tag
             {
-                Id = Guid.NewGuid(),
+                Id = "1",
                 Tag_id = "brak",
                 Tag_label = "brak"
             };
