@@ -10,8 +10,9 @@ namespace mongoEngine
     public interface IMongoInreface<T> where T : class
     {
         void InsertOne(T model);
-        void FindAndUpdate(T model, string valueForUpdate);
+        void UpdateOne(FilterDefinition<T> filter, UpdateDefinition<T> source);
         List<T> GetAllDocumentsFromCollection();
+
     }
     public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class
     {
@@ -20,24 +21,22 @@ namespace mongoEngine
         private IMongoCollection<T> collectionDB { get; set; }
         private IConnectMongoClient imongoCon { get; set; }
         private IMongo_List imongoList { get; set; }
+
         public MongoInterfaceClass()
         {
             imongoList = new MongoDB_List();
             imongoCon = new ConnectMongoClient();
             db = imongoCon.setConnocetion().GetDatabase(imongoList.getSpecificParamters("test_mongo").base_name);
-            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);
-            
+            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);  
         }
+
         public void InsertOne(T model)
         {
              collectionDB.InsertOne(model);
         }
-        public void FindAndUpdate(T model, string valueForUpdate)
+        public void UpdateOne(FilterDefinition<T> filter, UpdateDefinition<T> source)
         {
-            db = imongoCon.setConnocetion().GetDatabase(imongoList.getSpecificParamters("test_mongo").base_name);
-            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);
-            //collectionDB.FindOneAndUpdate(model,)
-
+            collectionDB.UpdateOne(filter,source);
         }
         public List<T> GetAllDocumentsFromCollection()
         {
@@ -45,5 +44,7 @@ namespace mongoEngine
             var documents = collectionDB.Find(filter).ToList();
             return documents;
         }
+
+
     }
 }
