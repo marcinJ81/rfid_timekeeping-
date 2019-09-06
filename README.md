@@ -6,7 +6,7 @@
 - .net core  console UI;
 - partition by responsibility (?);
 
-This good place for learn english.
+This good place for learn english ;-)
 
 ### Description.
 At this moment I have for project in solution:
@@ -14,13 +14,13 @@ At this moment I have for project in solution:
 - mongoEngine,
 - UI_interface - project for test other projects
 - NUnitTestProject
-For now all methods in this project are synchronous.
+For now all methods in this project are synchronous. In the future they will be asynchronous.
 
 ### Code.
 Simple class mapped in to database
 
 ```javascript
-public class Tag
+	public class Tag
     {
         [BsonId]
         [BsonElement("id")]
@@ -40,10 +40,10 @@ public class Tag
 
     }
 ```
-Interface for class Tag
+###### Interface for class Tag
 
 ```javascript
-public interface ITag_Services<T> where T : class
+	public interface ITag_Services<T> where T : class
     {
         List<T> getListResult();
         T getData();
@@ -51,23 +51,33 @@ public interface ITag_Services<T> where T : class
         void addData(T model);
     }
 ```
-
 Interface with constraints on type parameters
 
-
-
-> where T : class - The type argument must be a reference type. Where T is any class.
-
-
+- where T : class - The type argument must be a reference type. Where T is any class.
 
 [MSDN - Constraint on type parameters](https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)
 
-Fulfillment of the contract in class Tag_services
-
-#### Inlinecode
+###### Fulfillment of the contract in class Tag_services
 
 ` public class Tag_services : ITag_Services<Tag>, IDisposable`
 
+##### Main Interface (contract) in project mongoEngine
+
+```javascript
+	public interface IMongoInreface<T> where T : class
+    {
+        void InsertOne(T model);
+        void UpdateOne(FilterDefinition<T> filter, UpdateDefinition<T> source);
+        List<T> GetAllDocumentsFromCollection();
+        T GEtSpecificDocument(FilterDefinition<T> filter);
+        void DeleteOne(FilterDefinition<T> filter);
+    }
+```
+###### Fulfillment of the contract in class Tag_services
+
+` public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class, new() `
+
+- where T : class, new() - Type argument must be a reference type and must have constructor
 
 
 
