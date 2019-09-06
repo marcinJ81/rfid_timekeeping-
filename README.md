@@ -3,14 +3,22 @@
 - RFID device for measuring time;
 - tag standard Unique;
 - database MongoDB;
+- .net core  console UI;
 - partition by responsibility (?);
 
 This good place for learn english.
 
-####Description.
+### Description.
+At this moment I have for project in solution:
+- DB_repository,
+- mongoEngine,
+- UI_interface - project for test other projects
+- NUnitTestProject
+For now all methods in this project are synchronous.
+
+### Code.
 Simple class mapped in to database
 
-####Javascript　
 ```javascript
 public class Tag
     {
@@ -34,7 +42,6 @@ public class Tag
 ```
 Interface for class Tag
 
-####Javascript　
 ```javascript
 public interface ITag_Services<T> where T : class
     {
@@ -47,19 +54,21 @@ public interface ITag_Services<T> where T : class
 
 Interface with constraints on type parameters
 
-###Blockquotes
+
 
 > where T : class - The type argument must be a reference type. Where T is any class.
 
-###Links
 
-[Links](https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)
+
+[MSDN - Constraint on type parameters](https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)
 
 Fulfillment of the contract in class Tag_services
 
-####Inline code
+#### Inlinecode
 
 ` public class Tag_services : ITag_Services<Tag>, IDisposable`
+
+
 
 
 

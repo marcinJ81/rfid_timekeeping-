@@ -13,6 +13,7 @@ namespace mongoEngine
         void UpdateOne(FilterDefinition<T> filter, UpdateDefinition<T> source);
         List<T> GetAllDocumentsFromCollection();
         T GEtSpecificDocument(FilterDefinition<T> filter);
+        void DeleteOne(FilterDefinition<T> filter);
 
     }
     public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class, new()
@@ -56,6 +57,11 @@ namespace mongoEngine
         public T GEtSpecificDocument(FilterDefinition<T> filter)
         {
             return collectionDB.Find(filter).First();
+        }
+
+        public void DeleteOne(FilterDefinition<T> filter)
+        {
+            collectionDB.DeleteOne(filter);
         }
     }
 }
