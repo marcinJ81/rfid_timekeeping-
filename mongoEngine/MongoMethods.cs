@@ -15,7 +15,7 @@ namespace mongoEngine
         T GEtSpecificDocument(FilterDefinition<T> filter);
 
     }
-    public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class
+    public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class, new()
     {
       
         private IMongoDatabase db { get; set; }
@@ -31,6 +31,13 @@ namespace mongoEngine
             collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);  
         }
 
+        public MongoInterfaceClass(IMongoDatabase db, IMongoCollection<T> collectionDB, IConnectMongoClient imongoCon, IMongo_List imongoList)
+        {
+            this.imongoList = imongoList;
+            this.imongoCon = imongoCon;
+            this.db = db;
+            this.collectionDB = collectionDB;
+        }
         public void InsertOne(T model)
         {
              collectionDB.InsertOne(model);

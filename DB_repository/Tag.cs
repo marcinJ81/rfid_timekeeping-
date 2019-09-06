@@ -10,7 +10,6 @@ namespace DB_repository
         [BsonElement("id")]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        //czy ja to potrzebuje? przeciez autogenerate id = true
 
         [BsonElement("tag_id")]
         public string Tag_id { get; set; }

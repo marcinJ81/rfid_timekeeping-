@@ -24,7 +24,7 @@ namespace GIinterface
             IMongoDatabase db = imongoCon.setConnocetion().GetDatabase(ilistDB.getSpecificParamters("test_mongo").base_name);
             IMongoCollection<DB_repository.Tag> dbCollection = db.GetCollection<DB_repository.Tag>(ilistDB.getSpecificParamters("test_mongo").collection_name);
 
-            
+
 
             //DB_repository.Tag tag = new DB_repository.Tag()
             //{
@@ -37,11 +37,11 @@ namespace GIinterface
             //itag.addData(tag);
             //imongointerface.InsertOne(itag.getData());
 
-            //var documents = imongointerface.GetAllDocumentsFromCollection();
-            //foreach (var i in documents)
-            //{
-            //    Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
-            //}
+            var documents = imongointerface.GetAllDocumentsFromCollection();
+            foreach (var i in documents)
+            {
+                Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
+            }
 
             //FilterDefinition<DB_repository.Tag> filter = Builders<DB_repository.Tag>.Filter.Eq("tag_label", "25");
             //UpdateDefinition<DB_repository.Tag> source = Builders<DB_repository.Tag>.Update.Set("tag_id", igenId.generateTagId());
