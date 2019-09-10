@@ -14,7 +14,6 @@ namespace mongoEngine
         List<T> GetAllDocumentsFromCollection();
         T GEtSpecificDocument(FilterDefinition<T> filter);
         void DeleteOne(FilterDefinition<T> filter);
-
     }
     public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class, new()
     {
@@ -29,7 +28,7 @@ namespace mongoEngine
             imongoList = new MongoDB_List();
             imongoCon = new ConnectMongoClient();
             db = imongoCon.setConnocetion().GetDatabase(imongoList.getSpecificParamters("test_mongo").base_name);
-            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);  
+            collectionDB = db.GetCollection<T>(imongoList.getSpecificParamters("test_mongo").collection_name);
         }
 
         public MongoInterfaceClass(IMongoDatabase db, IMongoCollection<T> collectionDB, IConnectMongoClient imongoCon, IMongo_List imongoList)

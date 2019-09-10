@@ -32,7 +32,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj": {
+                "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -60,6 +64,65 @@
             "nunit": {
               "target": "Package",
               "version": "[3.10.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj",
+        "projectName": "RFID_interface1",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj",
+        "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\m.juranek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\nugety": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [

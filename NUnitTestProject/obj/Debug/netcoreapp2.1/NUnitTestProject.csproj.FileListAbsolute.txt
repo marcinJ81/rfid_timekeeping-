@@ -13,3 +13,7 @@ C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\obj\Debug\netc
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.AssemblyInfo.cs
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.dll
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\bin\Debug\netcoreapp2.1\RFID_interface1.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\bin\Debug\netcoreapp2.1\topTO.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\bin\Debug\netcoreapp2.1\RFID_interface1.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\NUnitTestProject\obj\Debug\netcoreapp2.1\NUnitTestProject.csproj.CopyComplete

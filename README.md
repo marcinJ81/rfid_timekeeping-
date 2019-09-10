@@ -16,7 +16,7 @@ At this moment I have for project in solution:
 - NUnitTestProject
 For now all methods in this project are synchronous. In the future they will be asynchronous.
 
-### Code.
+###  mongoEngine project.
 Simple class mapped in to database
 
 ```javascript
@@ -78,6 +78,26 @@ Interface with constraints on type parameters
 ` public class MongoInterfaceClass<T> : IMongoInreface<T> where T : class, new() `
 
 - where T : class, new() - Type argument must be a reference type and must have constructor
+
+### RFID_interface1 project.
+This project have methods to connect specified RFID device. In application I have two different RFID devices.
+1.  [Unique transponder reader](http://www.mikrokontrola.pl/index.php) -  Library added from producent topto.dll, device operation via threads. Now I don't have this devices but I have working and checked code,
+2. [RFID-USB-DESK reade](https://botland.com.pl/en/inveo-smart-controllers/9123-inveo-rfid-usb-desk-reader-unique-125khz-5903351240840.html) - device operation via interrupts.
+
+Description for  point 1.
+
+Main interface in this this project is ISerialPortAndTransponderDevice (Unique transponder reader). We use to: 
+- portNames() - list of serial ports,
+- getAdresForPort(string portName) - get adres for serial port,
+- bool initializeDevice(string portName) - initialize transponder
+- bool ReadTagId(out long) - read card id from device,
+- Transponder deviceHandler (propertis).
+
+**Attention**
+In the future I want to add thread support. Now this is simulate and few methods.
+
+
+
 
 
 

@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RFID_interface1\RFID_interface1.csproj" />
+  </ItemGroup>
+
 </Project>

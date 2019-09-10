@@ -1,0 +1,11 @@
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\bin\Debug\netstandard2.0\RFID_interface1.deps.json
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\bin\Debug\netstandard2.0\RFID_interface1.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.csprojAssemblyReference.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.csproj.CoreCompileInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.AssemblyInfoInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\bin\Debug\netstandard2.0\RFID_interface1.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.pdb
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\bin\Debug\netstandard2.0\topTO.dll
+C:\Users\m.juranek\Documents\vs_2019\mongoEngine\RFID_interface1\obj\Debug\netstandard2.0\RFID_interface1.csproj.CopyComplete
