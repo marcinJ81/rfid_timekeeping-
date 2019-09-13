@@ -13,25 +13,23 @@ namespace GIinterface
 {
    public class ThreadSmple
     {
-        public void addcoument()
-        {
-           
-           
-        }
-    }
-    class Program
-    {
         private static IMongoInreface<DB_repository.Tag> imongointerface { get; set; }
         private static ITag_Services<DB_repository.Tag> itag { get; set; }
-
-        static void Main(string[] args)
+        public DB_repository.Tag addingTag { get; private set; }
+        public void threadAdd(object tag)
         {
             IMongo_List ilistDB = new MongoDB_List();
-
             IConnectMongoClient imongoCon = new ConnectMongoClient();
             imongointerface = new MongoInterfaceClass<DB_repository.Tag>();
-            IGeneratorId igenId = new GenerateId();
             itag = new Tag_services();
+            itag.addData((DB_repository.Tag)tag);
+            imongointerface.InsertOne(itag.getData());
+            addingTag = itag.getData();
+        }
+
+        public object createTag()
+        {
+            IGeneratorId igenId = new GenerateId();
             DB_repository.Tag tag = new DB_repository.Tag()
             {
                 Id = ObjectId.GenerateNewId().ToString(),
@@ -39,55 +37,80 @@ namespace GIinterface
                 Tag_label = igenId.generateLabel(),
                 Tag_time = DateTime.Now.ToUniversalTime()
             };
-
-            itag.addData(tag);
-            imongointerface.InsertOne(itag.getData());
+            return tag;
+        }
+    }
+    class Program
+    {
+        private static IMongoInreface<DB_repository.Tag> imongointerface { get; set; }
+        private static ITag_Services<DB_repository.Tag> itag { get; set; }
+        private static readonly object m_oPadlock = new object();
+        static void Main(string[] args)
+        {
+            imongointerface = new MongoInterfaceClass<DB_repository.Tag>();
+            Thread thMain = new Thread(new ThreadStart(menu));
+            thMain.Start();
+            thMain.Join();
         }
 
-      
-
-
-        void threadTest()
+        public static void menu()
         {
-            //DB_repository.Tag tag = new DB_repository.Tag()
-            //{
-            //    Id = ObjectId.GenerateNewId().ToString(),
-            //    Tag_id = igenId.generateTagId(),
-            //    Tag_label = igenId.generateLabel(),
-            //    Tag_time = DateTime.Now.ToUniversalTime()
-            //};
+            ThreadSmple threadSimple = new ThreadSmple();
+            object newTag = threadSimple.createTag();
 
-            //itag.addData(tag);
-            //imongointerface.InsertOne(itag.getData());
-
-            var documents = imongointerface.GetAllDocumentsFromCollection();
-            foreach (var i in documents)
+            int caseSwitch = 0;
+            while (caseSwitch != 4)
             {
-                Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
+                //Console.Clear();
+                Console.WriteLine("1: Dodaj do bazy");
+                Console.WriteLine("2: Wyświetl cala baze");
+                Console.WriteLine("3: Wyświetl ostatni dodany dokument");
+                Console.WriteLine("podaj liczebe");
+                caseSwitch = int.Parse(Console.ReadLine());
+                switch (caseSwitch)
+                {
+                    case 1:
+                        Console.WriteLine("Opcja 1, zapis");
+                        Thread th1 = new Thread(new ParameterizedThreadStart(threadSimple.threadAdd));
+                        th1.Start(newTag);
+                        th1.Join();
+                        break;
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("Opcja 2 - odczyt");
+                        Thread th2 = new Thread(new ThreadStart(threadTest));
+                        th2.Start();
+                        th2.Join();
+                        break;
+                    case 3:
+                        Console.WriteLine("Pokaż ostatnio dodany tag");
+                        Thread th3 = new Thread(new ParameterizedThreadStart(getElement));
+                        th3.Start(threadSimple.addingTag);
+                        th3.Join();
+                        break;
+                    case 4:
+                        Console.WriteLine("Koniec");
+                        break;
+                }
             }
+        }
+        static void threadTest()
+        {
+                var documents2 = imongointerface.GetAllDocumentsFromCollection();
 
-            FilterDefinition<DB_repository.Tag> filter = Builders<DB_repository.Tag>.Filter.Eq("tag_label", "25");
-            imongointerface.DeleteOne(filter);
+                foreach (var i in documents2)
+                {
 
-            var documents2 = imongointerface.GetAllDocumentsFromCollection();
+                    Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
+                }
+        }
 
-            foreach (var i in documents2)
-            {
-                Console.WriteLine(i.Id + " " + i.Tag_id + " " + i.Tag_label + " " + i.Tag_time.ToLongTimeString());
-            }
-
-            //UpdateDefinition<DB_repository.Tag> source = Builders<DB_repository.Tag>.Update.Set("tag_id", igenId.generateTagId());
-            //imongointerface.UpdateOne(filter,source);
-
-            //Console.WriteLine("\r");
-
-            //var documents2 = imongointerface.GetAllDocumentsFromCollection();
-            //documents2 = documents2.Where(x => x.Tag_label == "25").ToList();
-            //Console.WriteLine(documents2[0].Id + " " + documents2[0].Tag_id + " " + documents2[0].Tag_label + " " + documents2[0].Tag_time.ToLongTimeString() );
-
-            //IMongoDatabase db = imongoCon.setConnocetion().GetDatabase(ilistDB.getSpecificParamters("test_mongo").base_name);
-            //IMongoCollection<DB_repository.Tag> dbCollection = db.GetCollection<DB_repository.Tag>(ilistDB.getSpecificParamters("test_mongo").collection_name);
-
+        static void getElement(object tag)
+        {
+            DB_repository.Tag tagFilter = (DB_repository.Tag)tag;
+            FilterDefinition<DB_repository.Tag> filter = Builders<DB_repository.Tag>.Filter.Eq("tag_label", tagFilter.Tag_label);
+            var result = imongointerface.GEtSpecificDocument(filter);
+            Console.WriteLine(result.Id + " " + result.Tag_id + " " + result.Tag_label + " " + result.Tag_time.ToLongTimeString());
         }
 
 
