@@ -79,6 +79,47 @@ Interface with constraints on type parameters
 
 - where T : class, new() - Type argument must be a reference type and must have constructor
 
+**Example - add document to collection**
+```csharp
+Class Program
+{
+	private static IMongoInreface<DB_repository.Tag> imongointerface { get; set; }
+	private static ITag_Services<DB_repository.Tag> itag { get; set; }
+
+	static void Main(string[] args)
+    {
+            IMongo_List ilistDB = new MongoDB_List();
+
+            IConnectMongoClient imongoCon = new ConnectMongoClient();
+            imongointerface = new MongoInterfaceClass<DB_repository.Tag>();
+            IGeneratorId igenId = new GenerateId();
+            itag = new Tag_services();
+            DB_repository.Tag tag = new DB_repository.Tag()
+            {
+                Id = ObjectId.GenerateNewId().ToString(),
+                Tag_id = igenId.generateTagId(),
+                Tag_label = igenId.generateLabel(),
+                Tag_time = DateTime.Now.ToUniversalTime()
+            };
+
+            itag.addData(tag);
+            imongointerface.InsertOne(itag.getData());
+     }
+}
+```
+Description to code
+
+    private static IMongoInreface<DB_repository.Tag> imongointerface { get; set; }
+	private static ITag_Services<DB_repository.Tag> itag { get; set; }
+
+Interfaces declaration
+- imongointerface - interface with all methods to be use in database,
+- itag -  methods to be use in class Tag.
+
+     IMongo_List ilistDB = new MongoDB_List();
+
+ilist - List of parameters to conect to MongoDB
+
 ### RFID_interface1 project.
 This project have methods to connect specified RFID device. In application I have two different RFID devices.
 1.  [Unique transponder reader](http://www.mikrokontrola.pl/index.php) -  Library added from producent topto.dll, device operation via threads. Now I don't have this devices but I have working and checked code,
