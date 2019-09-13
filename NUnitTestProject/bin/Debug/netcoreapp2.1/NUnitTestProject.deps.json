@@ -11,7 +11,8 @@
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "NUnit3TestAdapter": "3.10.0",
           "RFID_interface1": "1.0.0",
-          "NUnit": "3.10.1"
+          "NUnit": "3.10.1",
+          "topTO": "1.1.2.7786"
         },
         "runtime": {
           "NUnitTestProject.dll": {}
@@ -1071,14 +1072,13 @@
       },
       "RFID_interface1/1.0.0": {
         "dependencies": {
-          "System.IO.Ports": "4.5.0",
-          "topTO": "1.1.2.7786"
+          "System.IO.Ports": "4.5.0"
         },
         "runtime": {
           "RFID_interface1.dll": {}
         }
       },
-      "topTO.Reference/1.1.2.7786": {
+      "topTO/1.1.2.7786": {
         "runtime": {
           "topTO.dll": {
             "assemblyVersion": "1.1.2.7786",
@@ -1617,7 +1617,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "topTO.Reference/1.1.2.7786": {
+    "topTO/1.1.2.7786": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

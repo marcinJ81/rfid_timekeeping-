@@ -16,4 +16,10 @@
     <ProjectReference Include="..\RFID_interface1\RFID_interface1.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="topTO">
+      <HintPath>..\RFID_interface1\topTO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

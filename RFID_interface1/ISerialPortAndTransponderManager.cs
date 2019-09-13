@@ -20,8 +20,7 @@ namespace RFID_interface1
 
     public class SerialPortAndTransponderManager : ISerialPortAndTransponderManager
     {
-        private ISerialPortAndTransponderManager iserialPort { get; set; }
-        
+
         public Transponder deviceHandler
         {
             get {
@@ -33,10 +32,7 @@ namespace RFID_interface1
             set { deviceHandler = value; }
         }
 
-        public SerialPortAndTransponderManager(ISerialPortAndTransponderManager iserialP)
-        {
-            this.iserialPort = iserialP;
-        }
+      
         public byte getAdressForPort(string portName)
         {
             if (portName == "com256" || portName == "com257" || portName == "com258")
@@ -55,7 +51,7 @@ namespace RFID_interface1
 
         public bool initializeDevice(string portName)
         {
-            Transponder device = new Transponder(portName, this.iserialPort.getAdressForPort(portName));
+            Transponder device = new Transponder(portName, getAdressForPort(portName));
             if (device != null)
             {
                 deviceHandler = device;
