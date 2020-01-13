@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj": {}
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj",
         "projectName": "RFID_interface1",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
