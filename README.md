@@ -135,7 +135,43 @@ Main interface in this this project is ISerialPortAndTransponderDevice (Unique t
 - Transponder deviceHandler (propertis).
 
 **Attention**
-In the future I want to add thread support. Now this is simulate and few methods.
+In the future I want to add thread support. 
+
+### RavenEngine project.
+RavenDB NoSQL document database.
+
+**Set connect to DB**
+
+```csharp
+public static class DBConnect2
+    {
+        public static IDocumentStore idb =
+            new DocumentStore()
+            {
+                Database = "test3",
+                Urls = new[] { "http://localhost:8080" }
+            }.Initialize();
+    }
+```
+Or, example from documentation RavenDB
+```csharp
+public static class DBConnetTest
+    {
+        private static readonly Lazy<IDocumentStore> LazyStore =
+         new Lazy<IDocumentStore>(() =>
+         {
+             var store = new DocumentStore
+             {
+                 Urls = new[] { "http://localhost:8080" },
+                 Database = "test2"
+             };
+
+             return store.Initialize();
+         });
+
+        public static IDocumentStore Store => LazyStore.Value;
+    }
+```
 
 
 
