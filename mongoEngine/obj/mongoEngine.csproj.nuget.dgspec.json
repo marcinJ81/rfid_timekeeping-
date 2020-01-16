@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {}
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj",
         "projectName": "mongoEngine",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

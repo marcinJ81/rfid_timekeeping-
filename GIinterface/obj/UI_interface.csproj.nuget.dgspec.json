@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj": {}
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\GIinterface\\UI_interface.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\DB_repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\DB_repository.csproj",
         "projectName": "DB_repository",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\DB_repository.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\GIinterface\\UI_interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\GIinterface\\UI_interface.csproj",
         "projectName": "UI_interface",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\UI_interface.csproj",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\GIinterface\\UI_interface.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\GIinterface\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\GIinterface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -92,11 +92,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj": {
-                "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\DB_repository\\DB_repository.csproj"
+              "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\DB_repository.csproj": {
+                "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\DB_repository\\DB_repository.csproj"
               },
-              "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
-                "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj"
+              "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj": {
+                "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj"
               }
             }
           }
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj",
         "projectName": "mongoEngine",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\mongoEngine.csproj",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\mongoEngine.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\mongoEngine\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\mongoEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

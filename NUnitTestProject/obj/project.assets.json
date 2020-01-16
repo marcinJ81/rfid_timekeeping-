@@ -5852,7 +5852,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
+      "sha512": "+H/MdmHMSBlVY+YvOsZ1eEKImjgVKbJy6IDa8GXd899d+dvzKoptKPMK0RkK1eYzpG3xPcYlwCuifmkOjpvEHg==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -5950,11 +5950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\NUnitTestProject\\NUnitTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\NUnitTestProject\\NUnitTestProject.csproj",
       "projectName": "NUnitTestProject",
-      "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\NUnitTestProject\\NUnitTestProject.csproj",
+      "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\NUnitTestProject\\NUnitTestProject.csproj",
       "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\NUnitTestProject\\obj\\",
+      "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\NUnitTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5976,8 +5976,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj": {
-              "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\mongoEngine\\RFID_interface1\\RFID_interface1.csproj"
+            "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj": {
+              "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj"
             }
           }
         }

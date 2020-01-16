@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj": {}
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\ravenEngine\\ravenEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj": {
+    "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\ravenEngine\\ravenEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj",
-        "projectName": "RFID_interface1",
-        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\RFID_interface1.csproj",
+        "projectUniqueName": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\ravenEngine\\ravenEngine.csproj",
+        "projectName": "ravenEngine",
+        "projectPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\ravenEngine\\ravenEngine.csproj",
         "packagesPath": "C:\\Users\\m.juranek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\RFID_interface1\\obj\\",
+        "outputPath": "C:\\Users\\m.juranek\\Documents\\vs_2019\\rfid\\rfid_timekeeping-\\ravenEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,7 +31,7 @@
           "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -42,17 +42,17 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netcoreapp2.1": {
           "dependencies": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             },
-            "System.IO.Ports": {
+            "RavenDB.Client": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.2.6, )"
             }
           },
           "imports": [
