@@ -112,7 +112,5 @@ namespace GIinterface
             var result = imongointerface.GEtSpecificDocument(filter);
             Console.WriteLine(result.Id + " " + result.Tag_id + " " + result.Tag_label + " " + result.Tag_time.ToLongTimeString());
         }
-
-
     }
 }

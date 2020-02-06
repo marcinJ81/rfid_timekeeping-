@@ -7,3 +7,12 @@ C:\Users\m.juranek\Documents\vs_2019\mongoEngine\DB_repository\obj\Debug\netstan
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\DB_repository\obj\Debug\netstandard2.0\DB_repository.dll
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\DB_repository\obj\Debug\netstandard2.0\DB_repository.pdb
 C:\Users\m.juranek\Documents\vs_2019\mongoEngine\DB_repository\obj\Debug\netstandard2.0\DB_repository.csprojAssemblyReference.cache
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\bin\Debug\netstandard2.0\DB_repository.deps.json
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\bin\Debug\netstandard2.0\DB_repository.dll
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\bin\Debug\netstandard2.0\DB_repository.pdb
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.csprojAssemblyReference.cache
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.csproj.CoreCompileInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.AssemblyInfoInputs.cache
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.dll
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\DB_repository\obj\Debug\netstandard2.0\DB_repository.pdb

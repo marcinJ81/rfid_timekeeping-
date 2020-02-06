@@ -4,3 +4,6 @@ C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debu
 C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debug\netcoreapp2.1\ravenEngine.csproj.CoreCompileInputs.cache
 C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debug\netcoreapp2.1\ravenEngine.AssemblyInfoInputs.cache
 C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debug\netcoreapp2.1\ravenEngine.AssemblyInfo.cs
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\bin\Debug\netcoreapp2.1\ravenEngine.pdb
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debug\netcoreapp2.1\ravenEngine.dll
+C:\Users\m.juranek\Documents\vs_2019\rfid\rfid_timekeeping-\ravenEngine\obj\Debug\netcoreapp2.1\ravenEngine.pdb
