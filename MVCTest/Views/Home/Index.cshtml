@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MVCTest.Models.TagForView>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+       
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+               Tag_id
+            </th>
+            <th>
+                Tag_label
+            </th>
+            <th>
+                Tag_time
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tag_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tag_label)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tag_DateTime)
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
