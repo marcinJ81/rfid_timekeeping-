@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RFID_interface1", "RFID_int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ravenEngine", "ravenEngine\ravenEngine.csproj", "{27F0F8C1-C439-4145-9CCF-C12843EEA68D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{90DE8880-80DE-4D32-8343-5FE00DC638B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{90DE8880-80DE-4D32-8343-5FE00DC638B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTest", "MVCTest\MVCTest.csproj", "{072554B2-01DD-484A-9B40-8D2D0627A4D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{90DE8880-80DE-4D32-8343-5FE00DC638B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90DE8880-80DE-4D32-8343-5FE00DC638B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90DE8880-80DE-4D32-8343-5FE00DC638B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072554B2-01DD-484A-9B40-8D2D0627A4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072554B2-01DD-484A-9B40-8D2D0627A4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072554B2-01DD-484A-9B40-8D2D0627A4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072554B2-01DD-484A-9B40-8D2D0627A4D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
