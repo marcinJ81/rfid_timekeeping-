@@ -1,6 +1,7 @@
 ﻿using MVCTest.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,6 +18,13 @@ namespace MVCTest.Controllers
 
             return View(result);
         }
-       
+        public ActionResult Index2()
+        {
+            Process.Start(@"c:\Windows\System32\cmd.exe");
+            
+            return View();
+        }
+
+
     }
 }
